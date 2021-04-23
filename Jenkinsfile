@@ -2,8 +2,6 @@ pipeline{
       // 定义groovy脚本中使用的环境变量
       environment{
         // 将构建任务中的构建参数转换为环境变量
-        ORIGIN_REPO =  sh(returnStdout: true,script: 'echo $origin_repo').trim()
-        REPO =  sh(returnStdout: true,script: 'echo $repo').trim()
         BRANCH =  sh(returnStdout: true,script: 'echo $branch').trim()
       }
 
