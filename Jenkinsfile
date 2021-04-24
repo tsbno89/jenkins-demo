@@ -8,7 +8,7 @@ pipeline{
       // 定义本次构建使用哪个标签的构建环境，本示例中为 “slave-pipeline”
       agent{
         node{
-          label 'ci-pipeline'
+          label 'slave-pipeline'
         }
       }
 
